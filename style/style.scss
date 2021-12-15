@@ -1,0 +1,75 @@
+@import 'fonts';
+@import 'colors';
+@import 'animation';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: $bg;
+    font-family: $montserrat;
+    font-weight: 400;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 5rem;
+        color: $red;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+
+    .heart {
+        text-align: justify;
+        height: 100px;
+        width: 100px;
+        background-color: $red;
+        position: relative;
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px $red;
+        animation: heart 1s linear infinite;
+        margin: 4rem 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: $red;
+            top: -50%;
+            border-radius: 50%;
+            box-shadow: -10px -10px 90px $red;
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: $red;
+            right: -50%;
+            border-radius: 50%;
+            box-shadow: 10px 10px 90px $red;
+
+        }
+    }
+}

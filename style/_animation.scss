@@ -1,0 +1,64 @@
+@keyframes heart {
+    // 0% {
+    //     transform: rotate(-45deg) scale(.7);
+    // }
+
+    // 25% {
+    //     transform: rotate(-45deg) scale(1.07);
+    // }
+
+    // 50% {
+    //     transform: rotate(-45deg) scale(1);
+    // }
+
+    // 75% {
+    //     transform: rotate(-45deg) scale(1.07);
+    // }
+
+    // 100% {
+    //     transform: rotate(-45deg) scale(.7);
+    // }
+    from {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    12% {
+        transform: rotate(-45deg) scale(1.02);
+    }
+
+    20% {
+        transform: rotate(-45deg) scale(0.99);
+    }
+
+    28% {
+        transform: rotate(-45deg) scale(0.98);
+    }
+
+    32% {
+        transform: rotate(-45deg) scale(1.2);
+    }
+
+    38% {
+        transform: rotate(-45deg) scale(0.96);
+    }
+
+    50% {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    58% {
+        transform: rotate(-45deg) scale(0.98);
+    }
+
+    70% {
+        transform: rotate(-45deg) scale(0.9);
+    }
+
+    80% {
+        transform: rotate(-45deg) scale(0.98);
+    }
+
+    to {
+        transform: rotate(-45deg) scale(1);
+    }
+}
